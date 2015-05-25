@@ -11,7 +11,7 @@ int main()
 {
 	//varibale list
 	int pass;
-	int cpass;
+	int pcheck;
 	int size = 9999;
 
 	ifstream inputFile;
@@ -25,7 +25,17 @@ int main()
 
 	cout << "We have the password\n";
 	cout << "We will being proccesing to determine what it is...\n";
-	cout << pass;
+
+	for (int i = 0; i < size; i++)
+	{
+		if (i == pass)
+			pcheck = pass;
+
+	}
+	
+	
+	cout << "We have found password: " << pcheck << endl;
+
 
 
 
